@@ -1,0 +1,70 @@
+/* About.css */
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #fff; /* Adjust text color */
+    font-family: 'Roboto', sans-serif; /* Change font */
+  }
+  
+  .about-content h2 {
+    margin-bottom: 1.5rem; /* Increase margin */
+    font-size: 2rem; /* Increase font size */
+    color: #fff; /* Darker color for headings */
+  }
+  
+  .about-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .about-content li {
+    margin-bottom: 1rem;
+    position: relative;
+    opacity: 0; /* Start with elements hidden */
+    transform: translateY(20px); /* Move elements down initially */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add smooth transitions */
+  }
+  
+  .about-content li:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #666; /* Darker color for circles */
+    border-radius: 50%;
+  }
+  
+  .about-content li:after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #666; /* Darker color for lines */
+  }
+  
+  .about-content p {
+    margin-bottom: 2rem;
+  }
+  
+  /* Brighten up the circles and lines on hover */
+  .about-content li:hover:before,
+  .about-content li:hover:after {
+    background-color: #f0c419; /* Brighter color on hover */
+  }
+  
+  /* Animation to fade in and slide up each list item */
+  .about-content li:nth-child(odd) { animation: fadeInUp 0.5s ease 0.5s forwards; }
+  .about-content li:nth-child(even) { animation: fadeInUp 0.5s ease 1s forwards; }
+  
+  /* Keyframes for fade in and slide up animation */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

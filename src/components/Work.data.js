@@ -21,7 +21,7 @@ text:"Engage in the timeless game of Rock, Paper, Scissors! Choose your move wis
         tittle:"Crafting Digital Experiences: Showcasing Creative Solutions and Innovations.",
 text:"Welcome to my portfolio! Explore my digital journey with captivating projects and innovative solutions.From web design to software development,each project embodies my dedication to creating memorable digital experiences.Let's embark on this journey together!"
 ,
-        view:"https://aniket191103.github.io/PortFolio/",
+        view:"https://portfoliobyaniket.netlify.app/",
    source:"https://github.com/aniket191103/PortFolio"
     }
 ]

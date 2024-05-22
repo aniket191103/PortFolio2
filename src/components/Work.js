@@ -3,7 +3,7 @@ import React from 'react'
 import Card from "./Card"
 import projectCardData from "./Work.data"
 
-import { NavLink } from "react-router-dom"
+// import { NavLink } from "react-router-dom"
 const Work = () => {
   return (
     <div className="work-container">

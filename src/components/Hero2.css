@@ -1,11 +1,11 @@
-.hero-img {
+.hero-img{
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     height: 60vh;
     position: relative;
 }
 
-.hero-img::before {
+.hero-img::before{
     content: "";
     background-image: url('../assets/Hero2bg.jpg');
     background-size: cover;
@@ -27,6 +27,8 @@
     align-items: center;
     position: relative; /* Ensure this is above the pseudo-element */
     z-index: 1; /* Ensure this is above the pseudo-element */
+   padding-right: 10%;
+   padding-left: 10%;
 }
 .hero-img h1{
     font-size: 2.4rem;

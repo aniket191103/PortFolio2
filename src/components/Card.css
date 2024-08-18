@@ -1,10 +1,11 @@
-/* Card.css */
 .project-container {
     max-width: 1140px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px; /* Add gap between cards */
+    padding: 20px; /* Add padding to container */
 }
 
 .project-card {
@@ -18,6 +19,11 @@
     align-items: center;
     padding: 20px; /* Add padding to each card */
     box-sizing: border-box; /* Include padding in the width calculation */
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .project-img {
@@ -29,6 +35,7 @@
     color: #fff;
     padding: 1rem 0;
     font-size: 1.5rem;
+    text-align: center; /* Center the title */
 }
 
 .pro-details p {
@@ -46,4 +53,51 @@
 
 .pro-btns .btn {
     margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f0c419;
+    color: #1a1919;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pro-btns .btn:hover {
+    background-color: #ffdd57;
+    color: #1a1919;
+}
+
+@media (max-width: 1200px) {
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 20px); /* One card per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .project-card {
+        padding: 15px; /* Reduce padding inside cards */
+    }
+
+    .project-title {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .pro-details p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .pro-btns .btn {
+        font-size: 0.875rem; /* Adjust button font size for smaller screens */
+    }
 }

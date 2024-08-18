@@ -1,70 +1,158 @@
 /* About.css */
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    color: #fff; /* Adjust text color */
-    font-family: 'Roboto', sans-serif; /* Change font */
-  }
-  
-  .about-content h2 {
-    margin-bottom: 1.5rem; /* Increase margin */
-    font-size: 2rem; /* Increase font size */
-    color: #fff; /* Darker color for headings */
-  }
-  
-  .about-content ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .about-content li {
-    margin-bottom: 1rem;
-    position: relative;
-    opacity: 0; /* Start with elements hidden */
-    transform: translateY(20px); /* Move elements down initially */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Add smooth transitions */
-  }
-  
-  .about-content li:before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 10px;
-    width: 8px;
-    height: 8px;
-    background-color: #666; /* Darker color for circles */
-    border-radius: 50%;
-  }
-  
-  .about-content li:after {
-    content: '';
-    position: absolute;
-    left: -12px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #666; /* Darker color for lines */
-  }
-  
-  .about-content p {
-    margin-bottom: 2rem;
-  }
-  
-  /* Brighten up the circles and lines on hover */
-  .about-content li:hover:before,
-  .about-content li:hover:after {
-    background-color: #f0c419; /* Brighter color on hover */
-  }
-  
-  /* Animation to fade in and slide up each list item */
-  .about-content li:nth-child(odd) { animation: fadeInUp 0.5s ease 0.5s forwards; }
-  .about-content li:nth-child(even) { animation: fadeInUp 0.5s ease 1s forwards; }
-  
-  /* Keyframes for fade in and slide up animation */
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff; /* Adjust text color */
+  font-family: 'Roboto', sans-serif; /* Change font */
+}
+
+.about-content h2 {
+  margin-bottom: 1.5rem; /* Increase margin */
+  font-size: 2rem; /* Increase font size */
+  color: #fff; /* Darker color for headings */
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  margin-bottom: 1rem;
+  position: relative;
+  opacity: 0; /* Start with elements hidden */
+  transform: translateY(20px); /* Move elements down initially */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add smooth transitions */
+}
+
+.about-content li:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #666; /* Darker color for circles */
+  border-radius: 50%;
+}
+
+.about-content li:after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #666; /* Darker color for lines */
+}
+
+.about-content p {
+  margin-bottom: 2rem;
+}
+
+/* Brighten up the circles and lines on hover */
+.about-content li:hover:before,
+.about-content li:hover:after {
+  background-color: #f0c419; /* Brighter color on hover */
+}
+
+/* Animation to fade in and slide up each list item */
+.about-content li:nth-child(odd) { animation: fadeInUp 0.5s ease 0.5s forwards; }
+.about-content li:nth-child(even) { animation: fadeInUp 0.5s ease 1s forwards; }
+
+/* Keyframes for fade in and slide up animation */
+
+.Skill-Intro{
+  display: flex;
+}
+
+.My-exp{
+  font-size: large;
+display: flex;
+text-align: center;
+}
+
+.My-exp {
+  color: #f0c419;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.My-exp:hover {
+  color: #ffdd57; /* Brighter color on hover */
+}
+
+/* Resume Section Styling */
+.resume-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  /* background: linear-gradient(to bottom right, #3078c1, #3a85be); */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #ecf0f1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #666;
+}
+
+.resume-section:hover {
+  background-color: #3b4a58; /* Slightly lighter background on hover */
+  transform: scale(1.02);
+}
+
+.resume-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #ecf0f1;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.resume-section p {
+  margin-bottom: 1.5rem;
+  color: #bdc3c7;
+  font-size: 1.1rem;
+}
+
+.resume-section a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-section a:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 150px; /* Adjust the width of the profile image */
+  height: 150px; /* Adjust the height of the profile image */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff; /* Optional: Add border for contrast */
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

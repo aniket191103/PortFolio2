@@ -1,6 +1,6 @@
 import BlackJack from "../assets/BlackJack.png"
 import RPS from "../assets/RPS.png"
-import Portfolio from "../assets/Portfolio.png"
+import HospitalMangamentSystem from "../assets/HospitalMangamentSystem.png"
 const projectCardData=[
     {
         imgsrc:BlackJack,
@@ -17,12 +17,12 @@ text:"Engage in the timeless game of Rock, Paper, Scissors! Choose your move wis
    source:"https://github.com/aniket191103/rock-paper-scissors"
     },
     {
-        imgsrc:Portfolio,
-        tittle:"Crafting Digital Experiences: Showcasing Creative Solutions and Innovations.",
-text:"Welcome to my portfolio! Explore my digital journey with captivating projects and innovative solutions.From web design to software development,each project embodies my dedication to creating memorable digital experiences.Let's embark on this journey together!"
+        imgsrc:HospitalMangamentSystem,
+        tittle:"Hospital Management System ",
+text:"The hospital management system website enables patients to log in, book appointments, and send messages. An admin portal allows administrators to manage appointment data and add new doctors. The system streamlines hospital operations and communication."
 ,
-        view:"https://portfoliobyaniket.netlify.app/",
-   source:"https://github.com/aniket191103/PortFolio"
+        view:"https://hospital-management-system-frontend-vbmr.onrender.com/",
+   source:"https://github.com/aniket191103/Hospital-Management-System.git"
     }
 ]
 

@@ -15,7 +15,7 @@ function Contact() {
       <div className="resume-section">
         <h2>Download My Resume</h2>
         <p>You can download my resume using the link below:</p>
-        <a href="/assets/ResumeAniket.pdf" download="ResumeAniket.pdf">Download Resume</a>
+        <a href="/assets/ResumeAniketSrivastava.pdf" download="ResumeAniketSrivastava.pdf">Download Resume</a>
       </div>
       <Footer />
     </div>

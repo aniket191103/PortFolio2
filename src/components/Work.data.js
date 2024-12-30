@@ -6,7 +6,7 @@ const projectCardData = [
     imgsrc: BlackJack,
     tittle: "Blackjack Royale: Play Solo or with Friends!",
     text: "Experience the excitement of blackjack! Aim to beat the dealer's hand without going over 21. Hit, stand, double down, or split pairs for big wins. Play solo or challenge friends in multiplayer mode. Are you ready to conquer the tables and become a blackjack master? ",
-    view: "https://aniket191103.github.io/bLackjack/",
+    view: "https://aniket191103.github.io/BlackJack/",
     source: "https://github.com/aniket191103/bLackjack",
   },
   { 
